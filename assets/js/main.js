@@ -143,5 +143,10 @@ $(document).ready(function () {
   $("#imageUpload").change(function() {
     readURL(this);
   });
+    
+  $("[data-fancybox]").fancybox({
+      selector: '[data-fancybox="images"]',
+      loop: true
+  });
   
 });

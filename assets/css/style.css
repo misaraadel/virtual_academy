@@ -1523,15 +1523,33 @@ button[type=submit] {
 }
 .event-box .image-content {
   width: 227px;
-  height: 262px;
+  height: 290px;
   border-radius: 50px;
   overflow: hidden;
+  position: relative;
 }
 .event-box .image-content img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.event-box .image-content .type {
+  padding: 3px 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+.event-box .image-content .type span {
+  color: var(--light-color);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 .event-box .contain {
   width: calc(100% - 227px);
